@@ -27,3 +27,4 @@ WORKDIR /workdir
 COPY --from=clang-format-build /build/llvm-project/llvm/build/bin/clang-format /usr/bin
 
 ENTRYPOINT ["clang-format"]
+CMD ["--help"]
